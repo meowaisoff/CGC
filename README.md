@@ -171,31 +171,7 @@ python eval.py   --root /path/to/datasets   --trainer CoOp   --dataset-config-fi
 | CAC | 4.56 | 89.47 |
 | **CGC (Ours)** | **3.21** | **89.62** |
 
-## Repository Structure
 
-```
-.
-├── trainers/
-│   ├── coop.py              # CoOp: Context Optimization
-│   ├── cocoop.py            # CoCoOp: Conditional Context Optimization
-│   ├── kgcoop.py            # KgCoOp: Knowledge-guided Context Optimization
-│   ├── zsclip.py            # Zero-shot CLIP baselines
-│   └── imagenet_templates.py # Prompt templates for ImageNet variants
-├── cgc/
-│   ├── __init__.py
-│   ├── cgc.py               # Confidence-Guided Calibration implementation
-│   └── cfp.py               # Calibration Failure Predictor
-├── configs/
-│   ├── datasets/            # Dataset configurations
-│   └── trainers/            # Method hyperparameters
-├── scripts/
-│   ├── train.sh             # Training scripts
-│   └── eval.sh              # Evaluation scripts
-├── train.py                 # Main training script
-├── eval.py                  # Evaluation with CGC
-├── README.md
-└── requirements.txt
-```
 
 
 
